@@ -22,7 +22,7 @@ for i=1:size(y1,1)
     if knn==1
       predicted(i,:)=[list(1,2)];
     else
-        predicted(i,:)=[mode(list(knn,2))];
+        predicted(i,:)=[mean2(list(knn,2))];
     end
     list=0;
 end
